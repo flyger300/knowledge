@@ -1,0 +1,8 @@
+{"total":28,"rows":[
+  {"cn_name":"启动时间","en_name":"SYSUPTIME","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"磁盘","en_name":"DISK","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"响应时延","en_name":"ICMP","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"内存","en_name":"MEMORY","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"CPU","en_name":"CPU","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"错包","en_name":"ERRORS","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+]}

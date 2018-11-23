@@ -1,0 +1,170 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'center',border:false">	
+	<div style="padding:0px 30px 20px 30px">
+			<form id="knowledge_form" class="easyui-form" method="post">
+				<table cellpadding="5" style="width:100%">
+					<tr style="height: 35px;">
+						<td style="width:15%" align="right">标题：</td>
+						<td style="width:85%"><input class="easyui-textbox"
+							name="title" style="width:100%;"
+							data-options="required:true,validType:'length[2,512]'"></td>
+					</tr>
+					<tr style="height: 40px;">
+						<td align="right">类型：</td>
+						<td><input class="easyui-combobox" name="type" style="width:100%"
+						data-options="valueField: 'id',textField: 'text',
+							url: '/UMP/json/knowledge_type.json',
+							onLoadSuccess:function() {								
+							},
+							onChange:function(newValue,oldValue) {												
+							}">
+						</input></td>
+					</tr>
+					<!-- <tr style="height: 35px;">
+						<td align="right" valign="top" style="padding-top:10px">关键字：</td>
+						<td>
+							<button type="button" class="btn1 btn1-app-ext" onclick="addKey()"><i class="fa fa-plus"></i>增加</button> 
+							<button type="button" class="btn1 btn1-app-ext" onclick="deleteKey()"><i class="fa fa-trash-o"></i>删除</button>
+							<div id="_key">
+							</div>
+						</td>
+					</tr> -->
+					<tr style="height: 35px;" >
+						<td align="right">问题描述：</td>
+						<td style="padding-top:5px">							
+							<textarea class="easyui-kindeditor" name="question" data-options="multiline:true" style="height:160px;width:100%"></textarea>							
+						</td>
+					</tr>
+					<!-- <tr style="height: 35px;">
+						<td align="right" valign="top" style="padding-top:10px">描述附件：</td>
+						<td style="padding-top:5px">
+							<button type="button" class="btn1 btn1-app-ext" onclick="addQuestion()"><i class="fa fa-plus"></i>增加</button> 
+							<button type="button" class="btn1 btn1-app-ext" onclick="deleteQuestion()"><i class="fa fa-trash-o"></i>删除</button>
+							<div id="_question" style="padding-top:5px">
+							</div>
+						</td>
+					</tr> -->
+					<tr style="height: 35px;" style="padding-top:5px">
+						<td align="right" >解决方案：</td>
+						<td style="padding-top:10px"><textarea class="easyui-kindeditor" name="project" data-options="multiline:true" style="height:160px;width:100%"></textarea></td>
+					</tr>
+					<!-- <tr style="height: 35px;">
+						<td align="right" valign="top" style="padding-top:10px">方案附件：</td>
+						<td style="padding-top:5px;padding-bottom:5px">
+							<button type="button" class="btn1 btn1-app-ext" onclick="addProject()"><i class="fa fa-plus"></i>增加</button> 
+							<button type="button" class="btn1 btn1-app-ext" onclick="deleteProject()"><i class="fa fa-trash-o"></i>删除</button>
+							<div id="_project" style="padding-top:5px">
+							</div>
+						</td>
+					</tr> -->
+				</table>
+			</form>
+		</div>
+		</div>
+	<div data-options="region:'south',border:false"
+		style="text-align:center;padding:10px">
+		<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'"
+			href="javascript:void(0)" onclick="javascript:save()"
+			style="width:80px">保存</a> <a class="easyui-linkbutton"
+			data-options="iconCls:'icon-cancel'" href="javascript:void(0)"
+			onclick="$('#knowledge_win').window('close');" style="width:80px">取消</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	var editRow = undefined; 
+	
+	$(function() {	
+	
+	})
+	
+	function save() {
+
+		$('#knowledge_form').form('submit', {
+			url : "../../addKnowledge.do",
+			onSubmit : function(param) {
+
+				return $(this).form('enableValidation').form('validate');
+
+			},
+			success : function(data) {
+				if (data == '') {
+					$('#knowledge_win').window("close");
+					knowledge_grid.datagrid("reload");
+				} else {
+					alert(data);
+				}
+			}
+		});
+
+	}
+
+	function addKey() {
+		var id = generateUUID();
+		$("#_key").append("<input id='t_" + id + "' type='checkbox' value='" + id + "' name='key'/><input id='" + id + "' style='width:30%;border-bottom:1px solid rgb(168, 177, 231);' value='" + id + "'/>");
+		
+	}
+	
+	function addQuestion() {
+
+		var id = generateUUID();
+		$("#_question").append("<input id='t_" + id + "' type='checkbox' value='" + id + "' name='question'/><input class='easyui-filebox' data-options=\"buttonText: '选择文件'\"  id='" + id + "' value='' style='width:160px;'>");
+		$.parser.parse($("#_question"));
+		
+	}
+	
+	function addProject() {
+
+		var id = generateUUID();
+		$("#_project").append("<input id='t_" + id + "' type='checkbox' value='" + id + "' name='project'/><input class='easyui-filebox' data-options=\"buttonText: '选择文件'\"  id='" + id + "' value='' style='width:160px'>");
+		$.parser.parse($("#_project"));
+	}
+	
+	function deleteKey(){
+		
+		$("input[name='key']").each(function() { 
+			if ($(this).is(':checked')) {
+				var id = $(this).attr('value');
+				var div = document.getElementById("_key");  
+				var t1 = document.getElementById(id); 
+				var t2 = document.getElementById("t_" + id); 
+				div.removeChild(t1); 
+				div.removeChild(t2); 				
+			}
+			
+		}); 
+        
+    }
+	
+	function deleteQuestion(){
+        
+		$("input[name='question']").each(function() { 
+			if ($(this).is(':checked')) {
+				var id = $(this).attr('value');
+				var div = document.getElementById("_question");
+				$('#'+id).filebox('destroy');
+				var t = document.getElementById("t_" + id);
+				div.removeChild(t); 				
+			}
+			
+		});
+        
+    }
+	
+	function deleteProject(){
+        
+		$("input[name='project']").each(function() { 
+			if ($(this).is(':checked')) {
+				var id = $(this).attr('value');
+				var div = document.getElementById("_project"); 
+				$('#'+id).filebox('destroy');
+				var t = document.getElementById("t_" + id);
+				div.removeChild(t); 				
+			}
+			
+		}); 
+        
+    }
+	
+</script>

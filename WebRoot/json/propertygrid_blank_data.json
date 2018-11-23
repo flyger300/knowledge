@@ -1,0 +1,13 @@
+{"total":7,"rows":[
+  {"name":"名称","value":"","group":"ID Settings","editor":"text"},
+  {"name":"地址","value":"","group":"ID Settings","editor":"text"},
+  {"name":"年龄","value":"","group":"ID Settings","editor":"numberbox"},
+  {"name":"出生日期","value":"","group":"ID Settings","editor":"datebox"},
+  { "name": "职位", "value": "", "group": "其它", "field": "Role","editor":{
+    "type": "combobox", "options": {
+      "valueField": "value",
+      "textField": "name",
+      "url": "../../home/GetSelectItems_Role",
+      "required": true
+    }}}
+]}

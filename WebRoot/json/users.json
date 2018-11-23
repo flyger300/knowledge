@@ -1,0 +1,8 @@
+{"total":28,"rows":[
+  {"id":"FI-SW-01","name":"宋江","phone":"010-88556644-321","mobile":"13910110232","flag":0,"email":"songjiang@163.com","department":"网络","modify_time":"2016/08/16 10:11"},
+  {"id":"FI-SW-02","name":"林冲","phone":"010-88556644-321","mobile":"13910110232","flag":1,"login_name":"linchong","email":"linchong@163.com","department":"网络","modify_time":"2016/08/16 10:11"},
+  {"id":"FI-SW-03","name":"吴用","phone":"010-88556644-321","mobile":"13910110232","flag":0,"email":"wuyong@163.com","department":"网络","modify_time":"2016/08/16 10:11"},
+  {"id":"FI-SW-04","name":"李逵","phone":"010-88556644-321","mobile":"13910110232","flag":1,"login_name":"likui","email":"likui@163.com","department":"网络","modify_time":"2016/08/16 10:11"},
+  {"id":"FI-SW-05","name":"武松","phone":"010-88556644-321","mobile":"13910110232","flag":0,"email":"wusong@163.com","department":"网络","modify_time":"2016/08/16 10:11"},
+  {"id":"FI-SW-06","name":"晁盖","phone":"010-88556644-321","mobile":"13910110232","flag":0,"email":"chaogai@163.com","department":"网络","modify_time":"2016/08/16 10:11"}
+]}

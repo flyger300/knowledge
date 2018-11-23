@@ -1,0 +1,16 @@
+{"total":9,"rows":[
+{"name":"接口名称","value":"","editor":"text"},
+{"name":"所属设备","value":"","editor":"text"},
+{"name":"接口系列","value":"","editor":"numberbox"},
+{"name":"协议状态","value":"","editor":"datebox"},
+  {"name":"接口简称","value":"","editor":"datebox"},
+  {"name":"接口带宽(M)","value":"","editor":"datebox"},
+  {"name":"接口IP","value":"","editor":"datebox"},
+{ "name": "接口简称", "value": "","field": "Role","editor":{
+"type": "combobox", "options": {
+"valueField": "value",
+"textField": "name",
+"url": "../../home/GetSelectItems_Role",
+"required": true
+}}}
+]}

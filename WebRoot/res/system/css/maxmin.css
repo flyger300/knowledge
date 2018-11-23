@@ -1,0 +1,13 @@
+title{position:relative;height:27px;margin:5px;}
+.title h2{font-size:14px;height:27px;line-height:24px;border-bottom:1px solid #A1B4B0;}
+.title a,a.open{float:left;width:21px;height:19px;display:block;margin-left:5px;background:url(../images/tool.png) no-repeat;}
+a.open{position:absolute;top:10px;left:50%;margin-left:-10px;background-position:0 0;}
+a.open:hover{background-position:0 -29px;}
+.title a.min{background-position:-29px 0;}
+.title a.min:hover{background-position:-29px -29px;}
+.title a.max{background-position:-60px 0;}
+.title a.max:hover{background-position:-60px -29px;}
+.title a.revert{background-position:-149px 0;display:none;}
+.title a.revert:hover{background-position:-149px -29px;}
+.title a.close{background-position:-89px 0;}
+.title a.close:hover{background-position:-89px -29px;}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="app_preset_prof_preset_name">UTCUtils Launch Configuration</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="app_preset_prof_preset_filter_s"/>
+<entry key="app_preset_prof_preset_filter_p">com.cn.za.asset.controller.*,&#13;
+com.cn.za.asset.mapper.*,&#13;
+com.cn.za.asset.model.*,&#13;
+com.cn.za.asset.service.*,&#13;
+com.cn.za.controller.*,&#13;
+com.cn.za.interceptor.*,&#13;
+com.cn.za.mapper.*,&#13;
+com.cn.za.model.*,&#13;
+com.cn.za.monitor.controller.*,&#13;
+com.cn.za.monitor.mapper.*,&#13;
+com.cn.za.monitor.model.*,&#13;
+com.cn.za.monitor.service.*,&#13;
+com.cn.za.operation.controller.*,&#13;
+com.cn.za.operation.mapper.*,&#13;
+com.cn.za.operation.model.*,&#13;
+com.cn.za.operation.service.*,&#13;
+com.cn.za.service.*,&#13;
+com.cn.za.sys.controller.*,&#13;
+com.cn.za.sys.mapper.*,&#13;
+com.cn.za.sys.model.*,&#13;
+com.cn.za.sys.service.*,&#13;
+com.cn.za.util.*</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="app_preset_prof_preset_alloc_p">10</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="app_preset_"/>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">0</entry>
+<entry key="app_preset_prof_preset_samplingRefreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_stacks_p">false</entry>
+<entry key="app_preset_prof_preset_roots_p">com.cn.za.asset.controller.**
+com.cn.za.asset.mapper.**
+com.cn.za.asset.model.**
+com.cn.za.asset.service.**
+com.cn.za.controller.**
+com.cn.za.interceptor.**
+com.cn.za.mapper.**
+com.cn.za.model.**
+com.cn.za.monitor.controller.**
+com.cn.za.monitor.mapper.**
+com.cn.za.monitor.model.**
+com.cn.za.monitor.service.**
+com.cn.za.operation.controller.**
+com.cn.za.operation.mapper.**
+com.cn.za.operation.model.**
+com.cn.za.operation.service.**
+com.cn.za.service.**
+com.cn.za.sys.controller.**
+com.cn.za.sys.mapper.**
+com.cn.za.sys.model.**
+com.cn.za.sys.service.**
+com.cn.za.util.**
+</entry>
+<entry key="profiler.settings.instrument.empty.methods">false</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">false</entry>
+<entry key="app_preset_prof_preset_samplingRate_s">100</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+<entry key="app_preset_prof_preset_selector"/>
+<entry key="app_preset_prof_preset_filterMode_s">true</entry>
+<entry key="app_preset_prof_preset_runnables_p">true</entry>
+<entry key="app_preset_prof_preset_refreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_filterMode_p">false</entry>
+<entry key="app_preset_prof_preset_memoryMode_p">true</entry>
+</properties>

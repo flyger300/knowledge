@@ -1,0 +1,14 @@
+{"total":28,"rows":[
+  {"id":1,"name":"TCP端口状态","key_":"net.tcp.listen","params":"port","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"TCP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":2,"name":"UDP端口状态","key_":"net.udp.listen","params":"port","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"UDP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":3,"name":"CPU使用率","key_":"system.cpu.util","params":"","description":"CPU使用率。处理器负载使用的百分数。CPU、类型和模式可选。如果所选择的CPU不存在/如果所选择的类型不存在/如果所选择的模式不存在,avg1参数将会被使用。.","type":"CPU","value_type":"0","data_type":"0","unit":"%","modify_time":"2016/08/16 10:11"},
+  {"id":4,"name":"CPU信息","key_":"system.hw.cpu","params":"","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"CPU","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":11,"name":"内存使用率","key_":"system.memory.util","params":"hrMemorySize_oid|hrStorageUsed_oid","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"Memory","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":5,"name":"UDP服务状态","key_":"net.udp.service","params":"service|port","description":"检查服务是否运行并响应 UDP 请求。返回 0 - 服务关闭；1 - 服务运行.","type":"UDP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":5,"name":"TCP端口可连接性","key_":"net.tcp.port","params":"port","description":"检查是否能建立 TCP 连接到指定端口。返回 0 - 不能连接；1 - 可以连接.","type":"TCP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":6,"name":"TCP服务可用性","key_":"net.tcp.service","params":"service|ip|port","description":"检查服务是否可用.0—表示服务宕机,1—表示服务运行正常.如果<ip>参数省略，则系统会使用在主机上定义的IP地址DNS主机名。如果<port>参数省略，则会使用服务对应的默认端口.","type":"TCP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":7,"name":"TCP服务性能","key_":"net.tcp.service.perf","params":"service|ip|port","description":"检查服务的性能.0—表示服务宕机,sec—表示连接到指定服务所花的时间.如果<ip>参数省略,则系统会使用在主机上定义IP地址或DNS主机名代替。如果<port>参数省略，则会使用对应服务的默认端口.","type":"TCP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":8,"name":"ICMP连通性","key_":"icmpping","params":"target|packets|interval|size","description":"检查服务器是否能够被PING通.0——表示Ping失败.1——表示Ping成功。服务器的相应进程会每隔PingerFrequency配置项所指定的秒数执行一次ICMP Ping.","type":"ICMP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":9,"name":"ICMP丢包率","key_":"icmppingloss","params":"target|packets|interval|size|timeout","description":"返回ICMP ping包丢失的百分数.","type":"ICMP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":10,"name":"ICMP响应时间","key_":"icmppingsec","params":"target|packets|interval|size|timeout|mode","description":"返回ICMP ping的响应时间单位秒.例如：0.02","type":"ICMP","value_type":"0","data_type":"0","unit":"无","modify_time":"2016/08/16 10:11"}
+]}

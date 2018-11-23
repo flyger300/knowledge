@@ -1,0 +1,9 @@
+{"total":5,"rows":[
+	{"id":"alertgroup","name":"alertgroup","type":"text","length":"0"},
+	{"id":"alertkey","name":"alertkey","type":"text","length":"0"},
+	{"id":"node","name":"node","type":"text","length":"0"},
+	{"id":"nodealias","name":"nodealias","type":"text","length":"0"},
+	{"id":"manager","name":"manager","type":"text","length":"0"},
+	{"id":"summary","name":"summary","type":"text","length":"0"}
+	
+]}

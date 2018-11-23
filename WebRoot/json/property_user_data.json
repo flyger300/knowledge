@@ -1,0 +1,20 @@
+{"total":9,"rows":[
+  {"name":"用户名称","value":"","group":"基本信息","editor":"text"},
+  {"name":"手机","value":"2","group":"基本信息","editor":"text"},
+  {"name":"电话","value":"2","group":"基本信息","editor":"text"},
+  {"name":"邮箱","value":"2","group":"基本信息","editor":"text"},
+  {"name":"包含角色","value":"","group":"基本信息","editor":{
+    "type": "combobox", "options": {
+      "valueField": "name",
+      "textField": "name",
+      "url": "json/type.json",
+      "multiple":true,
+      "required": true
+    }}},
+  {"name":"备注","value":"","group":"基本信息","editor":"numberbox"},
+  {"name":"是否默认","value":"","group":"基本信息","editor":"text"},
+  {"name":"登录名称","value":"","group":"登录信息","editor":"text"},
+  {"name":"登录密码","value":"","group":"登录信息","editor":"text"},
+  {"name":"确认密码","value":"","group":"登录信息","editor":"text"},
+  {"name":"修改时间","value":"","group":"基本信息"}
+]}

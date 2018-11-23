@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="res/AdminLTE-2.3.11/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="res/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="res/AdminLTE-2.3.11/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="res/AdminLTE-2.3.11/dist/css/skins/skin-red.css">
+
+    <link href="res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/easyui.css" rel="stylesheet" type="text/css">
+    <link href="res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/default_theme.css" rel="stylesheet" type="text/css">
+    <link href="res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/icon.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="res/system/css/style_menu.css" />
+	<link rel="stylesheet" href="res/system/css/style.css" />
+	<link rel="stylesheet" href="res/system/css/icon.css" />
+	
+    <style type="text/css"></style>
+
+    <script type="text/javascript" src="res/EasyUIInsdepTheme-1.5.1-1.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery/js/jQuery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="res/EasyUIInsdepTheme-1.5.1-1.0.0/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="res/EasyUIInsdepTheme-1.5.1-1.0.0/jquery.edatagrid.js"></script>
+    <script type="text/javascript" src="res/EasyUIInsdepTheme-1.5.1-1.0.0/datagrid-celledit.js"></script>
+    <script type="text/javascript" src="res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/jquery.insdep-extend.min.js"></script>
+    <!-- <script type="text/javascript" src="res/jquery-easyui-1.5.2/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="res/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery-easyui-1.5.2/jquery.easyui.min.js"></script> -->
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini" style="overflow:hidden;">
+
+<div class="wrapper">
+    <div style="top: 400px;" class="toggleSlidebar" onclick="tabResize()" data-toggle="offcanvas" role="button"></div>
+				
+    <header class="main-header">
+        <div class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <div class="logo-mini"><img alt="" src="res/system/images/globe.png"></div>
+            <!-- logo for regular state and mobile devices -->
+            <div class="logo-lg"><img alt="" src="res/system/images/title.png"></div>
+        </div>
+        <nav class="navbar navbar-static-top" role="navigation" style="box-shadow: 0px 2px 5px 0px rgba(214, 214, 214, 0.75);">    
+        <div class="navbar-custom-menu">
+			<ul class="nav navbar-nav">
+				<li><div class="header-right"><a href="javascript:" onclick="openCurUser()"><i class="fa fa-user" style="font-size:18px;color:red"></i><span id="user-name"></span></a></div></li>
+				<li><div class="header-right"><a href="javascript:" onclick="openHelp()"><i class="fa fa-question-circle" style="font-size:18px;color:red"></i> 
+				<span>&nbsp帮助</span></a></div></li>
+				<li><div class="header-right"><a href="javascript:" onclick="openAbout()"><i class="fa fa-info-circle" style="font-size:18px;color:red"></i>
+				<span>&nbsp关于</span></a></div></li>
+				<li><div class="header-right"><a href="javascript:" onclick="window.location.href = 'logout.do'"><i class="fa fa-power-off" style="font-size:18px;color:red"></i>
+				<span>&nbsp注销</span></a></div></li>				
+			</ul>
+		  </div>
+		  </nav>
+    </header>
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="sidebar-menu" id="left">
+
+            </ul>
+            <!-- <ul class="sidebar-menu" style="padding:0px; margin:0px;">
+				<li class="treeview"><a href="javascript:" onclick="window.location.href = 'logout.do'"><img data-icon-n="res/system/images/menu/quit.png" data-icon-a=" res/system/images/menu/quit.png" src="res/system/images/menu/quit.png">
+				<span>注销</span></a></li>
+            </ul> -->
+        </section>
+        <!-- /.sidebar -->
+        <div class="copyright">
+            <div>
+                <span id="copyrightTime">Copyright@2007-2016</span>
+                <br />
+                <span id="companyName">北京新奥首迅科技有限公司</span>
+            </div>
+        </div>
+    </aside>    
+    <div class="content-wrapper"  style="">
+        <section class="content">
+            <!-- Small boxes (Stat box) -->
+            <div id="mainTabs" class="easyui-tabs theme-tab-red-block-b theme-tab-line-bold" border=false style="padding-bottom:50px;width:100%;background-color: #ecf5ff;" data-options="tabPosition:'bottom'">
+                <!--<div title="主页" style="background-color: #b3b3b3;" class="easyui-layout" style="width:100%;height: 400px;">-->
+                <div id="home" title="主页" data-options="href:'sys/home/home.html'" style="padding-right:15px;background-color: #ecf5ff;">
+                	
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div>
+<div id="_user_win" class="easyui-window"
+	style="width:650px;height:500px;"
+	data-options="
+	minimizable:false,
+	collapsible:false,
+	maximizable:false,
+    modal:true,
+    cls:'theme-title-lines-red',
+    border:false"
+	closed="true"></div>
+<!-- ./wrapper -->
+
+<!-- <script type="text/javascript" src="res/AdminLTE-2.3.11/bootstrap/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="res/AdminLTE-2.3.11/dist/js/app.min.js"></script>
+<script type="text/javascript" src="res/system/js/menu.js"></script>
+<!-- <script type="text/javascript" src="res/echarts-2.2.0/build/dist/echarts.js"></script> -->
+<script type="text/javascript" src="res/system/js/common.js"></script>
+<script type="text/javascript" src="res/system/js/chart.js"></script>
+<script type="text/javascript" src="res/system/js/portlet.js"></script>
+<script type="text/javascript" src="res/system/js/validatebox.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+    	
+    	document.getElementById('user-name').innerHTML = "&nbsp&nbsp" + getParam("username");
+    	
+        $("#mainTabs").tabs({
+            height:$(window).height() - 5
+        });
+
+        $("#home").panel({
+            height:$(window).height() - 5
+        });
+
+        //$.parser.parse();
+        
+        var menuStr = loadTree();
+        var left = document.getElementById("left");
+        left.innerHTML = menuStr;
+        
+    });  
+    
+    $(window).resize(function(){
+        $("#mainTabs").tabs({
+            height:$(window).height() - 55
+        });
+        //$.parser.parse();
+    });
+    //当左侧边栏收缩或展开时，重新设置主窗口的大小
+    function tabResize() {
+        var tab = $("#mainTabs").tabs('getSelected');
+        var index = $('#mainTabs').tabs('getTabIndex',tab);
+        if ($("body").hasClass("sidebar-collapse")) {
+            $("#mainTabs").tabs({
+                width:$("#mainTabs").width() - 130
+            });
+        } else {
+            $("#mainTabs").tabs({
+                width:$("#mainTabs").width() + 130
+            });
+        }
+        $('#mainTabs').tabs("select", index);
+        $('#mainTabs').tabs("resize");
+    } 
+    
+    function openCurUser(){
+
+        var width = 550;
+    	var height = 360;
+    	
+    	var left = (document.body.clientWidth - width)/2;
+		var top = (document.body.clientHeight - height)/2;
+		
+		$.ajax({
+			async : false,
+			url : "getCurUser.do",
+			success : function(data, textStatus, jqXHR) {
+				
+				var user = $.parseJSON(data);
+				$('#_user_win').window({left:left, top:top,width:width,height:height,title:'<b>用户信息</b>',href:'./sys/user_detail.html',user:user});
+		        $('#_user_win').window('open');
+			
+			},
+			error : function(jqXHR, textStatus, errorMsg) {
+				alert(errorMsg);
+			}
+		});	       
+
+    }
+	
+    function openAbout() {
+    	
+    	var width = 350;
+    	var height = 200;
+    	
+    	var left = (document.body.clientWidth - width)/2;
+		var top = (document.body.clientHeight - height)/2;
+		
+		$('#_user_win').window({left:left, top:top,width:width,height:height,title:'<b>关于...</b>',href:'./about.html'});
+        $('#_user_win').window('open');
+    	
+    }
+    
+	function openHelp() {
+    	
+    }
+    
+</script>
+
+</body>
+</html>

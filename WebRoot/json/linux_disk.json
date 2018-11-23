@@ -1,0 +1,5 @@
+{"total":3,"rows":[
+  {"name":"/","total":"6010680","used":"6010680","free":"6010680","rateUsed":"45"},
+  {"name":"/dev/shm","total":"6010680","used":"6010680","free":"6010680","rateUsed":"45"},
+  {"name":"/boot","total":"6010680","used":"6010680","free":"6010680","rateUsed":"45"}
+]}

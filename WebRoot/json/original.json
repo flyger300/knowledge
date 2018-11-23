@@ -1,0 +1,11 @@
+{"total":28,"rows":[
+  {"id":"1","name":"ifSpeed","oidvalue":".1.3.6.1.2.1.2.2.1.5.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"2","name":"ifInErrors","oidvalue":".1.3.6.1.2.1.2.2.1.14.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"3","name":"ifOutErrors","oidvalue":".1.3.6.1.2.1.2.2.1.20.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"4","name":"ifInDiscards","oidvalue":".1.3.6.1.2.1.2.2.1.13.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"5","name":"ifOutDiscards","oidvalue":".1.3.6.1.2.1.2.2.1.19.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"6","name":"ifInUcastPkts","oidvalue":".1.3.6.1.2.1.2.2.1.11.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"7","name":"ifOutUcastPkts","oidvalue":".1.3.6.1.2.1.2.2.1.17.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"8","name":"ifInNUcastPkts","oidvalue":".1.3.6.1.2.1.2.2.1.12.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"},
+  {"id":"9","name":"ifOutNUcastPkts","oidvalue":".1.3.6.1.2.1.2.2.1.18.2","type":"接口","mfsrmd":"133","valueType":"数字","description":"","modifyTime":"2016/08/16 10:11"}
+]}

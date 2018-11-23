@@ -1,0 +1,7 @@
+{"total":28,"rows":[
+  {"id":1,"name":"TCP端口状态","key_":"net.tcp.listen[port]","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"数字","value_type":"0","data_type":"0","status":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":2,"name":"UDP端口状态","key_":"net.udp.listen[port]","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"数字","value_type":"0","data_type":"0","status":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":3,"name":"CPU使用率","key_":"system.cpu.util[<cpu>,<type>,<mode>]","description":"CPU使用率。处理器负载使用的百分数。CPU、类型和模式可选。如果所选择的CPU不存在/如果所选择的类型不存在/如果所选择的模式不存在,avg1参数将会被使用。.","type":"浮点型","value_type":"0","data_type":"0","status":"1","unit":"%","modify_time":"2016/08/16 10:11"},
+  {"id":4,"name":"CPU信息","key_":"system.hw.cpu[<cpu>,<info>]","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"数字","value_type":"0","data_type":"0","status":"0","unit":"无","modify_time":"2016/08/16 10:11"},
+  {"id":5,"name":"端口状态","key_":"net.tcp.listen[port]","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","type":"数字","value_type":"0","data_type":"0","status":"1","unit":"无","modify_time":"2016/08/16 10:11"}
+]}

@@ -1,0 +1,7 @@
+[
+  {"name":"SNMPv1/v2/v3","value":"SNMPv1/v2/v3"},
+  {"name":"ICMP","value":"ICMP"},
+  {"name":"Script","value":"Script"},
+  {"name":"SSH","value":"SSH"},
+  {"name":"TELNET","value":"TELNET"}
+]

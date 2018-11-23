@@ -1,0 +1,15 @@
+{"total":28,"rows":[
+  {"name":"Linux监控模板","name":"Linux监控模板","poll":"300","timeout":"10","retries":"1","method":"SSH","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"10","modify_time":"2016/08/16 10:11"},
+  {"name":"路由器监控模板","method":"SNMP3","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、流量、丢错包","type":"交换机","status":"启用","item_sum":"5","modify_time":"2016/08/16 10:11"},
+  {"name":"交换机监控模板","method":"SNMP3","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、流量、丢错包","type":"交换机","status":"启用","item_sum":"6","modify_time":"2016/08/16 10:11"},
+  {"name":"Mysql监控模板","method":"DB","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括表空间、最大链接数、当前连接数","type":"数据库","status":"停用","item_sum":"22","modify_time":"2016/08/16 10:11"},
+  {"name":"Oracle监控模板","method":"DB","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括表空间、最大连接数、当前连接数","type":"数据库","status":"启用","item_sum":"15","modify_time":"2016/08/16 10:11"},
+  {"name":"Tomcat监控模板","method":"SSH","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括","type":"中间件","status":"启用","item_sum":"11","modify_time":"2016/08/16 10:11"},
+  {"name":"Windows监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"防火墙监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"HTTPS监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"FTP监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"SMTP监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"LDAP监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"},
+  {"name":"IMAP监控模板","method":"WMI","poll":"300","timeout":"10","retries":"1","description":"监控的指标主要包括CPU、Memory、Disk、进程","type":"操作系统","status":"启用","item_sum":"12","modify_time":"2016/08/16 10:11"}
+]}

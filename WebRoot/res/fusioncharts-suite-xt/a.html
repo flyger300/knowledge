@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+FusionCharts.ready(function () {
+    // Create a new instance of FusionCharts for rendering inside an HTML
+    // `<div>` element with id `my-chart-container`.
+    var myChart = new FusionCharts({
+        type: 'bar2d',
+        renderAt: 'chart-container',
+        "width": "900",
+        "height": "400",
+        dataFormat: 'json',
+        dataSource: {
+            chart: {
+                "paletteColors": "#0075c2,#EE2C2C,#FF5904,#4EEE94,#FFB90F",
+                "bgColor": "#ffffff",
+                "showBorder": "0",
+                "showCanvasBorder": "0",
+                "usePlotGradientColor": "0",
+                "plotBorderAlpha": "10",
+                "placeValuesInside": "1",
+                "valueFontColor": "#ffffff",
+                "showAxisLines": "1",
+                "axisLineAlpha": "25",
+                "divLineAlpha": "10",
+                "alignCaptionWithCanvas": "0",
+                "showAlternateVGridColor": "0",
+                "captionFontSize": "14",
+                "subcaptionFontSize": "14",
+                "subcaptionFontBold": "0",
+                "toolTipColor": "#ffffff",
+                "toolTipBorderThickness": "0",
+                "toolTipBgColor": "#000000",
+                "toolTipBgAlpha": "80",
+                "toolTipBorderRadius": "2",
+                "toolTipPadding": "5"
+            },
+            data:[{
+                label: "服务器",
+                value: "880000"
+            },
+            {
+                label: "路由器",
+                value: "730000"
+            },
+            {
+                label: "交换机",
+                value: "590000"
+            },
+            {
+                label: "防火墙",
+                value: "520000"
+            },
+            {
+                label: "负载均衡器",
+                value: "330000"
+            }]
+        }
+    });
+
+    // Render the chart.
+    myChart.render();
+});
+</script>
+<body>
+    <div id="chart-container">FusionCharts will load here...</div>
+</body>
+</html>

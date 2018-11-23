@@ -1,0 +1,36 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'center',border:false">
+		<div id="_knowledge_detail" style="padding:0px 30px 20px 30px" class="easyui-panel" data-options="border:false">
+		</div>
+	</div>
+	<div data-options="region:'south',border:false"
+		style="text-align:center;padding:10px">
+		<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'"
+			href="javascript:void(0)" onclick="$('#knowledge_win').window('close');"
+			style="width:80px">确定</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	$(function() {
+		var index = $('#knowledge_win').window('options').index;
+		var knowledge = $('#knowledge_grid').datagrid('getData').rows[index];
+		var question = (knowledge.question) != undefined?(knowledge.question):'';
+		var project = (knowledge.project) != undefined?(knowledge.project):'';
+		var creator = (knowledge.creator) != undefined?(knowledge.creator):'';
+		var modifyTime = (knowledge.modifyTime) != undefined?(knowledge.modifyTime):'';
+		var content = "<label>创建者：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + creator + "</label><label>创建时间：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + modifyTime + "</label>";
+		content += "<label>分类：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + (knowledge.type != undefined ? knowledge.type:"") + "</label>";
+		content += "<br>";
+		content += "<label>问题描述：</label>"
+		content += "<br>";
+		content +=  question;
+		content += "<br>";
+		content += "<label>解决方案：</label>" 
+		content += "<br>";
+		content += project;
+		$("#_knowledge_detail").panel({content:content});	
+	});
+	
+</script>

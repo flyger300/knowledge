@@ -1,0 +1,12 @@
+{"total":28,"rows":[
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"交换机监控策略","en_name":"F-CMD-D","type":"交换机","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"路由器监控策略","en_name":"F-CMD-D","type":"路由器","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"防火墙监控策略","en_name":"F-CMD-D","type":"防火墙","default_flag":"是","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+]}

@@ -1,0 +1,7 @@
+[
+	{"name":"varchar","value":"varchar"},
+	{"name":"numeric","value":"numeric"},
+	{"name":"bigint","value":"bigint"},
+	{"name":"int","value":"int"} ,
+	{"name":"timestamp","value":"timestamp"}  	
+]

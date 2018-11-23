@@ -1,0 +1,5 @@
+{"total":2,"rows":[
+  {"id":"10001","name":"紧急","severity":"5","color":"ab2567","description":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"id":"10002","name":"严重","severity":"6","color":"ab2567","description":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+
+]}

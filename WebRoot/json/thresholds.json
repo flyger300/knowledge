@@ -1,0 +1,4 @@
+{"total":4,"rows":[
+  {"id":1,"severity":"3","threshold":"ssCpuUser > 80 && ssCpuUser <= 90","summary":"% : > [80%] && < [90%],Cpu使用率超阈值","status":"0","modify_time":"2016/08/16 10:11"},
+  {"id":2,"severity":"4","threshold":"ssCpuUser > 90","summary":"% : > [90%] && < [90%],Cpu使用率严重超阈值","status":"0","modify_time":"2016/08/16 10:11"}
+]}

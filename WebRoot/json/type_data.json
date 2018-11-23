@@ -1,0 +1,10 @@
+{"total":5,"rows":[
+  {"type_name":"路由器","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"交换机","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"防火墙","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"AC控制器","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"防病毒网关","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"服务器","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"风扇","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"type_name":"负载均衡器","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+]}

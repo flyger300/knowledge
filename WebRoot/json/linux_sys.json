@@ -1,0 +1,13 @@
+{
+	"sysDesc":"Linux localhost.localdomain 2.6.32-358.el6.x86_64 #1 SMP Tue Jan 29 11:47:41 EST 2013 x86_64",
+	"ip":"192.168.2.200",
+	"sysUptime":"25 days, 1:55:44.67",
+	"sysName":"localhost.localdomain",
+	"oneMinuteLoad":"0.0",
+	"fiveMinuteLoad":"0.0",
+	"fifteenMinuteLoad":"0.0",
+	"ramTotalSize":"1914688",
+	"ramRateUsed":"65",
+	"swapTotalSize":"4095992",
+	"swapRateUsed":"47",
+	"cpuRateUsed":"2"}

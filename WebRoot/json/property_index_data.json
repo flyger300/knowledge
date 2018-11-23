@@ -1,0 +1,9 @@
+{"total":9,"rows":[
+  {"name":"名称","value":"","editor":"text"},
+  {"name":"键值","value":"","editor":"text"},
+  {"name":"备注","value":"","editor":"textbox"},
+  {"name":"数据类型","value":"","editor":"text"},
+  {"name":"单位","value":"","editor":"text"},
+  {"name":"图表类型","value":"","editor":"text"},
+  {"name":"修改时间","value":""}
+]}

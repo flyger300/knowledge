@@ -1,0 +1,10 @@
+[
+  {"id":"SNMPv1","text":"SNMPv1"},
+  {"id":"SNMPv2","text":"SNMPv2"},
+  {"id":"SNMPv3","text":"SNMPv3"},
+  {"id":"ICMP","text":"ICMP"},
+  {"id":"SSH","text":"SSH"},
+  {"id":"TELNET","text":"TELNET"},
+  {"id":"WMI","text":"WMI"},
+  {"id":"Mysql","text":"Mysql"}
+]

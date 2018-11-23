@@ -1,0 +1,7 @@
+{"total":5,"rows":[
+	{"name":"alertgroup","type":"text","length":"0"},
+	{"name":"alertkey","type":"text","length":"0"},
+	{"name":"node","type":"text","length":"0"},
+	{"name":"nodealias","type":"text","length":"0"},
+	{"name":"manager","type":"text","length":"0"}
+]}

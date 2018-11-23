@@ -1,0 +1,11 @@
+{"total":9,"rows":[
+  {"name":"Cpu使用率","remark":"WS-C4507R-E","item_id":"1","type":"设备","modify_time":"2016/08/16 10:11"},
+  {"name":"内存使用率","remark":"WS-C4507R-E","item_id":"1","type":"设备","modify_time":"2016/08/16 10:11"},
+  {"name":"（/）磁盘使用率","remark":"WS-C4507R-E","item_id":"1","type":"设备","modify_time":"2016/08/16 10:11"},
+  {"name":"进流量使用率","remark":"WS-C4507R-E","item_id":"1","type":"接口","modify_time":"2016/08/16 10:11"},
+  {"name":"出流量使用率","remark":"WS-C4507R-E","item_id":"1","type":"接口","modify_time":"2016/08/16 10:11"},
+  {"name":"进丢包数","remark":"WS-C4507R-E","item_id":"","type":"接口","modify_time":"2016/08/16 10:11"},
+  {"name":"出丢包数","remark":"WS-C4507R-E","item_id":"","type":"接口","modify_time":"2016/08/16 10:11"},
+  {"name":"进错包数","remark":"WS-C4507R-E","item_id":"1","type":"接口","modify_time":"2016/08/16 10:11"},
+  {"name":"进错包数","remark":"WS-C4507R-E","item_id":"1","type":"接口","modify_time":"2016/08/16 10:11"}
+]}

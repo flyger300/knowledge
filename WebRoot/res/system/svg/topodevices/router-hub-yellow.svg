@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-19 11 30 30" style="enable-background:new -19 11 30 30;" xml:space="preserve" width="30" height="30">
+<style type="text/css">
+	.st0{fill:#B28730;}
+	.st1{fill:#E5B95A;}
+	.st2{fill:#EAC986;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="XMLID_579_">
+	<g id="XMLID_588_">
+		<g id="XMLID_589_">
+			<polygon id="XMLID_591_" class="st0" points="11,24 -4,32.7 -4,36.8 11,28.2 			"/>
+			<polygon id="XMLID_590_" class="st1" points="-4,36.8 -19,28.2 -19,24 -4,32.7 			"/>
+		</g>
+	</g>
+	<g id="XMLID_580_">
+		<polygon id="XMLID_587_" class="st2" points="-4,32.7 -19,24 -4,15.2 11,24 		"/>
+		<g id="XMLID_581_">
+			<path id="XMLID_586_" class="st3" d="M-0.8,23.9c0,0.2-0.1,0.5-0.2,0.7l3.3,1.9l1.4-0.8l-2.2-1.3H7c0.5,0,0.9-0.2,0.9-0.5
+				c0-0.3-0.4-0.5-0.9-0.5H1.5l2.2-1.3l-1.4-0.8L-1,23.2C-0.9,23.4-0.8,23.7-0.8,23.9z"/>
+			<path id="XMLID_585_" class="st3" d="M-7.2,23.9c0-0.2,0.1-0.5,0.2-0.7l-3.3-1.9l-1.4,0.8l2.2,1.3H-15c-0.5,0-0.9,0.2-0.9,0.5
+				s0.4,0.5,0.9,0.5h5.5l-2.2,1.3l1.4,0.8l3.3-1.8C-7.1,24.4-7.2,24.2-7.2,23.9z"/>
+			<path id="XMLID_584_" class="st3" d="M-4,22.1c0.4,0,0.8,0,1.2,0.1l3.3-1.9l-1.4-0.8l-2.2,1.3v-3.3c0-0.4-0.4-0.5-0.9-0.5
+				s-0.9,0.2-0.9,0.5v3.2l-2.2-1.3l-1.4,0.8l3.3,1.9C-4.8,22.1-4.4,22.1-4,22.1z"/>
+			<path id="XMLID_583_" class="st3" d="M-3.1,30.3v-3.2l2.2,1.3l1.4-0.8l-3.3-2c-0.4,0.1-0.8,0.1-1.2,0.1s-0.8,0-1.2-0.1l-3.3,1.9
+				l1.4,0.8l2.2-1.3v3.2c0,0.3,0.4,0.5,0.9,0.5C-3.5,30.9-3.1,30.6-3.1,30.3z"/>
+			<ellipse id="XMLID_582_" class="st3" cx="-4" cy="23.9" rx="1.5" ry="0.9"/>
+		</g>
+	</g>
+</g>
+</svg>

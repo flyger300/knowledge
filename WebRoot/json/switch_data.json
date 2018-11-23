@@ -1,0 +1,8 @@
+{"total":28,"rows":[
+  {"id":"FI-SW-01","name":"LRR0713_CR_R4506","type":"WS-C4507R-E","ip":"192.168.1.200"},
+  {"id":"FI-SW-02","name":"LRR0713_CR_R4507","type":"WS-C4507R-E","ip":"192.168.1.200"},
+  {"id":"FI-SW-03","name":"LRR0713_CR_R4508","type":"WS-C4507R-E","ip":"192.168.1.200"},
+  {"id":"FI-SW-04","name":"LRR0713_CR_R4509","type":"WS-C4507R-E","ip":"192.168.1.200"},
+  {"id":"FI-SW-05","name":"LRR0713_CR_R4510","type":"WS-C4507R-E","ip":"192.168.1.200"},
+  {"id":"FI-SW-06","name":"LRR0713_CR_R4511","type":"WS-C4507R-E","ip":"192.168.1.200"}
+]}

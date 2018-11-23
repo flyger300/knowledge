@@ -1,0 +1,27 @@
+{"total":28,"rows":[
+	{"iconCls":"icon-ok","Identifier":"K9-DL-01","FirstOccurrence":"2016-07-21 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":1,"Summary":"信号丢失:R_LOS","tally":4},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-02","FirstOccurrence":"2016-07-22 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":2,"Summary":"信号丢失:R_LOS","tally":5},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-03","FirstOccurrence":"2016-07-23 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":15},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-04","FirstOccurrence":"2016-07-19 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":4,"Summary":"信号丢失:R_LOS","tally":23},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-05","FirstOccurrence":"2016-07-18 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":5,"Summary":"信号丢失:R_LOS","tally":44},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-06","FirstOccurrence":"2016-07-17 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":2},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-01","FirstOccurrence":"2016-07-21 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":1,"Summary":"信号丢失:R_LOS","tally":4},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-02","FirstOccurrence":"2016-07-22 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":5},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-03","FirstOccurrence":"2016-07-23 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":15},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-04","FirstOccurrence":"2016-07-19 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":4,"Summary":"信号丢失:R_LOS","tally":23},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-05","FirstOccurrence":"2016-07-18 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":44},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-06","FirstOccurrence":"2016-07-17 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":2},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-01","FirstOccurrence":"2016-07-21 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":1,"Summary":"信号丢失:R_LOS","tally":4},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-02","FirstOccurrence":"2016-07-22 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":2,"Summary":"信号丢失:R_LOS","tally":5},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-03","FirstOccurrence":"2016-07-23 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":15},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-04","FirstOccurrence":"2016-07-19 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":4,"Summary":"信号丢失:R_LOS","tally":23},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-05","FirstOccurrence":"2016-07-18 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":4,"Summary":"信号丢失:R_LOS","tally":44},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-06","FirstOccurrence":"2016-07-17 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":2},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-01","FirstOccurrence":"2016-07-21 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":1,"Summary":"信号丢失:R_LOS","tally":4},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-02","FirstOccurrence":"2016-07-22 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":2,"Summary":"信号丢失:R_LOS","tally":5},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-03","FirstOccurrence":"2016-07-23 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":15},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-04","FirstOccurrence":"2016-07-19 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":3,"Summary":"信号丢失:R_LOS","tally":23},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-05","FirstOccurrence":"2016-07-18 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":44},
+  {"iconCls":"icon-ok","Identifier":"K9-DL-06","FirstOccurrence":"2016-07-17 10:57","LastOccurrence":"2016-07-23 16:57","Type":"Resolution","Severity":6,"Summary":"信号丢失:R_LOS","tally":2}
+
+]}

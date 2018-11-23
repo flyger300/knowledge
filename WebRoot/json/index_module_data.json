@@ -1,0 +1,21 @@
+{"total":28,"rows":[
+  {"productid":"通用","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.6","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"通用","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.6","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"CISCO-7600-MSFC4","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.6","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"CISCO-7600-MSFC4","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.6","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.1","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.1","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.2","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.2","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.3","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.3","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.4","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.4","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.5","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.5","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.6","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.6","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"UsedPercent","oid_value":".1.3.6.1.4.1.35047.1.5.1.6.7","oid_unit":"%","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"productid":"SXF-AC-6650","oid_name":"DiskDescr","oid_value":".1.3.6.1.4.1.35047.1.5.1.2.7","oid_unit":"STRING","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+
+]}

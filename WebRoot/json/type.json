@@ -1,0 +1,10 @@
+[
+  {"name":"路由器","value":"WS-C4507R-E"},
+  {"name":"交换机","value":"WS-C4507R-E"},
+  {"name":"防火墙","value":"WS-C4507R-E"},
+  {"name":"服务器","value":"WS-C4507R-E"},
+  {"name":"风扇","value":"WS-C4507R-E"},
+  {"name":"负载均衡器","value":"WS-C4507R-E"},
+  {"name":"防病毒网关","value":"WS-C4507R-E"},
+  {"name":"AC控制器","value":"WS-C4507R-E"}
+]

@@ -1,0 +1,8 @@
+[
+  {"name":"接口","value":"接口"},
+  {"name":"Cpu","value":"Cpu"},
+  {"name":"内存","value":"内存"},
+  {"name":"磁盘","value":"磁盘"},
+  {"name":"时延","value":"时延"},
+  {"name":"系统","value":"系统"}
+]

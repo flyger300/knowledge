@@ -1,0 +1,67 @@
+#setting {
+	background-image: url("../images/menu/ab.png"); /*插入背景图*/
+	background-repeat: no-repeat; /*设置图片不重复*/
+	background-position: -45px -163px; /*设置水平距离和垂直距离*/
+	width: 16px;
+	height: 16px;
+	border: 0;
+}
+
+#admin {
+	background-image: url("../images/menu/ab.png"); /*插入背景图*/
+	background-repeat: no-repeat; /*设置图片不重复*/
+	background-position: -187px -139px; /*设置水平距离和垂直距离*/
+	width: 16px;
+	height: 16px;
+	border: 0
+}
+
+#tool {
+	background-image: url("../images/menu/ab.png"); /*插入背景图*/
+	background-repeat: no-repeat; /*设置图片不重复*/
+	background-position: -259px -139px; /*设置水平距离和垂直距离*/
+	width: 16px;
+	height: 16px;
+	border: 0
+}
+
+#view {
+	background-image: url("../images/menu/ab.png"); /*插入背景图*/
+	background-repeat: no-repeat; /*设置图片不重复*/
+	background-position: -92px -305px; /*设置水平距离和垂直距离*/
+	width: 16px;
+	height: 16px;
+	border: 0
+}
+
+#report {
+	background-image: url("../images/menu/ab.png");
+	background-repeat: no-repeat;
+	background-position: -235px -68px;
+	width: 16px;
+	height: 16px;
+}
+
+#asset {
+	background-image: url("../images/menu/ab.png");
+	background-repeat: no-repeat;
+	background-position: -187px -329px;
+	width: 16px;
+	height: 16px;
+}
+
+#lock {
+	background-image: url("../images/menu/ab.png");
+	background-repeat: no-repeat;
+	background-position: -211px -139px;
+	width: 16px;
+	height: 16px;
+}
+
+#alert {
+	background-image: url("../images/menu/ab.png");
+	background-repeat: no-repeat;
+	background-position: -187px -399px;
+	width: 16px;
+	height: 16px;
+}

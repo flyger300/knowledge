@@ -1,0 +1,7 @@
+[
+  {"id":"FI-SW-02","name":"监控项","column":"0","url":"http://www.sina.com.cn","height":"250","type":2,"params":"deviceId=22"},
+  {"id":"FI-SW-03","name":"Cpu使用率","column":"0","url":"http://www.baidu.com","height":"250","type":2},
+  {"id":"FI-SW-04","name":"内存使用率","column":"1","url":"http://www.sina.com.cn","height":"250","type":2},
+  {"id":"FI-SW-05","name":"进流量率","column":"1","url":"http://www.sina.com.cn","height":"250","type":2},
+  {"id":"FI-SW-06","name":"出流量率","column":"1","url":"http://www.sina.com.cn","height":"250","type":2}
+]

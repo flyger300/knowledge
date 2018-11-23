@@ -1,0 +1,8 @@
+{"total":6,"rows":[
+  {"id":"FI-SW-01","name":"宋江","mobile":"13910110232","email":"songjiang@163.com","department":"网络"},
+  {"id":"FI-SW-02","name":"林冲","mobile":"13910110232","email":"linchong@163.com","department":"网络"},
+  {"id":"FI-SW-03","name":"吴用","mobile":"13910110232","email":"wuyong@163.com","department":"网络"},
+  {"id":"FI-SW-04","name":"李逵","mobile":"13910110232","email":"likui@163.com","department":"网络"},
+  {"id":"FI-SW-05","name":"武松","mobile":"13910110232","email":"wusong@163.com","department":"网络"},
+  {"id":"FI-SW-06","name":"晁盖","mobile":"13910110232","email":"chaogai@163.com","department":"网络"}
+]}

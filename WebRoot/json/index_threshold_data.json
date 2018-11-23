@@ -1,0 +1,8 @@
+{"total":28,"rows":[
+  {"index_name":"cpu使用率","threshold_scope":">=90%","event_severity":"6","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"index_name":"cpu使用率","threshold_scope":"<=10%","event_severity":"4","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"index_name":"内存使用率","threshold_scope":">=90%","event_severity":"6","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"index_name":"内存使用率","threshold_scope":"<=10%","event_severity":"4","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"index_name":"硬盘使用率","threshold_scope":">=90%","event_severity":"6","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"index_name":"硬盘使用率","threshold_scope":"<=10%","event_severity":"4","calender":"6:00~18:00","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+]}

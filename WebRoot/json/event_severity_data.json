@@ -1,0 +1,10 @@
+{"total":28,"rows":[
+  {"severity_name":"Clear","event_severity":"0","severity_color":"#008000","remark":"正常","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Indeterminate","event_severity":"1","severity_color":"#FFA500","remark":"清除","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Warning","event_severity":"2","severity_color":"#0000FF","remark":"警告","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Minor","event_severity":"3","severity_color":"#FFFF00","remark":"关注","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Major","event_severity":"4","severity_color":"#FFC0CB","remark":"紧急","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Critical","event_severity":"5","severity_color":"#FF0000","remark":"严重","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Unknown","event_severity":"98","severity_color":"#FF0000","remark":"未知","modify_time":"2016/08/16 10:11"},
+  {"severity_name":"Discard","event_severity":"99","severity_color":"#FF0000","remark":"丢弃","modify_time":"2016/08/16 10:11"}
+]}

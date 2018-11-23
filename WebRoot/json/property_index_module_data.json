@@ -1,0 +1,13 @@
+{"total":7,"rows":[
+  {"name":"oid名称","value":"Bill Smith","group":"ID Settings","editor":"text"},
+  {"name":"oid值","value":"","group":"ID Settings","editor":"text"},
+  {"name":"oid单位","value":"40","group":"ID Settings","editor":"numberbox"},
+  {"name":"备注","value":"01/02/2012","group":"ID Settings","editor":"datebox"},
+  { "name": "修改时间", "value": "", "group": "其它", "field": "Role","editor":{
+    "type": "combobox", "options": {
+      "valueField": "value",
+      "textField": "name",
+      "url": "../../home/GetSelectItems_Role",
+      "required": true
+    }}}
+]}

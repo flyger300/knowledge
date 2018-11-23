@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>知识库</title>
+
+<link rel="stylesheet" href="../res/AdminLTE-2.3.11/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../res/font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="../res/ionicons-2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="../res/AdminLTE-2.3.11/dist/css/AdminLTE.css">
+<link rel="stylesheet" href="../res/AdminLTE-2.3.11/dist/css/skins/skin-red.css">
+<link rel="stylesheet" href="../res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/easyui.css">
+<link rel="stylesheet" href="../res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/default_theme.css">
+<link rel="stylesheet" href="../res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/icon.css">
+<link rel="stylesheet" href="../res/system/css/style_menu.css" />
+<link rel="stylesheet" href="../res/system/css/style.css" />	
+<link rel="stylesheet" href="../res/kindeditor-4.1.11/themes/default/default.css" />
+<link rel="stylesheet" href="../res/kindeditor-4.1.11/plugins/code/prettify.css" />
+	
+<style type="text/css">
+#_knowledge .datagrid-header {
+	position: absolute;
+	visibility: hidden;
+	display:none;
+}
+</style>
+	
+<script type="text/javascript" src="../res/jquery/js/jQuery-2.2.0.min.js"></script>
+<script type="text/javascript" src="../res/EasyUIInsdepTheme-1.5.1-1.0.0/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../res/EasyUIInsdepTheme-1.5.1-1.0.0/themes/insdep/jquery.insdep-extend.min.js"></script>
+<script type="text/javascript" src="../res/system/js/common.js"></script>
+<script type="text/javascript" src="../res/kindeditor-4.1.11/kindeditor-all.js"></script>
+<script type="text/javascript" src="../res/kindeditor-4.1.11/kindeditor-all-min.js"></script>
+<script type="text/javascript" src="../res/kindeditor-4.1.11/lang/zh-CN.js"></script>
+<script type="text/javascript" src="../res/kindeditor-4.1.11/plugins/code/prettify.js"></script>
+<script type="text/javascript" src="../res/system/js/easyui_kindeditor.js"></script>
+
+<body>
+
+<div class="easyui-layout" border="true" fit="true" style="width:100%;">
+	<div id="_knowledge" border="false" data-options="region:'center'" style="">
+		<table id="knowledge_grid" class="easyui-datagrid" toolbar="#knowledge_tb"
+			data-options="rownumbers:true,
+			url:'../getKnowledgeList.do',method:'get',nowrap:false,border:false,fit:true,
+			fitColumns:true,pagination:true,
+			onLoadError: function(data){
+				alert(data.responseText);
+			}">
+			<thead>
+				<tr>
+					<th data-options="field:'title',width:60" formatter="fmtKnowledge">标题</th>
+				</tr>
+			</thead>
+			<div id="knowledge_tb">
+	            <input id="knowledge_ss"/>
+	            <button id="_addKnowledge" type="button" class="btn1 btn1-app-ext" onclick="addKnowledge()"><i class="fa fa-plus"></i>增加</button>
+	            <button id="_modifyKnowledge" type="button" class="btn1 btn1-app-ext" onclick="modifyKnowledge()"><i class="fa fa-edit"></i>修改</button>	             
+				<button id="_deleteKnowledge" type="button" class="btn1 btn1-app-ext" onclick="deleteKnowledge()"><i class="fa fa-trash-o"></i>删除</button>
+				<button id="_effectKnowledge" type="button" class="btn1 btn1-app-ext" onclick="effectKnowledge()"><i class="fa fa-legal"></i>生效</button>
+        	</div>
+		</table>
+		<div id="knowledge_mm" style="width:80px;"/>
+	</div>
+</div>
+
+<div id="knowledge_win" class="easyui-window"
+	style="width:650px;height:500px;padding:10px"
+	data-options="
+	minimizable:false,
+	collapsible:false,
+	maximizable:false,
+    modal:true,
+    cls:'theme-title-lines-red',
+    border:false"
+	closed="true"></div>
+
+<script type="text/javascript">
+			
+			var authority = getParam("authority");
+			if (authority == 1) {
+				$('#_addKnowledge').hide();
+				$('#_modifyKnowledge').hide();				
+				$('#_deleteKnowledge').hide();
+				$('#_effectKnowledge').hide();
+			}
+			
+            var knowledge_grid = $('#knowledge_grid');
+            
+            $(function(){
+            	
+            	/* var fields = ["标题","关键字","类型","问题描述","解决方案"];
+            	var column = ["title","key","type","question","project"]; */
+            	var fields = ["标题","问题描述","解决方案"];
+            	var column = ["title","question","project"];
+            	
+            	var content = $('#knowledge_mm').html();
+            	
+                for(var i=0; i<fields.length; i++){                
+                    content += "<div name='"+  column[i] +"'>"+ fields[i] +"</div>";                    
+                }
+                
+                $('#knowledge_mm').html(content);
+				
+                $('#knowledge_ss').searchbox({
+                    menu:'#knowledge_mm',
+                    width : 380,
+                    searcher : searchKnowledge,
+                    prompt : '请输入'
+                }); 
+                                
+                
+                
+
+            });
+            
+            function searchKnowledge(value,name){
+            	
+            	var condition = "*:*"; 
+            	if (value != "") {
+            		condition = name + ":" + value; 
+            	}
+            	
+            	var condition = name + " like '%" + value +"%'"; 
+            	$('#knowledge_grid').datagrid({
+					queryParams: {
+						condition: condition
+					}
+				});
+                                
+            }
+            
+            function addKnowledge(){
+
+            	var width = 800;
+            	var height = 540;
+            	
+            	var left = (document.body.clientWidth - width)/2;
+        		var top = (document.body.clientHeight - height)/2;
+
+                $('#knowledge_win').window({width:width,height:height,left:left, top:top,title:'<b>知识库->增加</b>'});
+                $('#knowledge_win').window('open');
+                $('#knowledge_win').window('refresh','add.html');
+            }
+
+            function deleteKnowledge(){
+                
+                var ids = [];
+                var rowsSels = knowledge_grid.datagrid("getSelections");
+                if(rowsSels.length < 1) {
+                    alert("请选择要删除的数据！");
+                    return;
+                }
+                
+            	for(var i=0; i<rowsSels.length; i++) {
+            		ids.push(rowsSels[i].id);
+            	}
+                
+                confirmMsg("确认删除？", function() {
+					var jqxhr = $.post("/UMP/deleteKnowledgeById.do", {ids: ids}, function(data) {
+						showMsg("删除成功！");
+						knowledge_grid.datagrid("reload");
+					});					
+				});
+                
+            }
+
+            function modifyKnowledge(){              
+
+                var rowsSels = knowledge_grid.datagrid("getSelections");
+                if(rowsSels.length != 1) {
+                    alert("请选择一条要编辑的记录");
+                    return;
+                }
+            	
+                var index = knowledge_grid.datagrid("getRowIndex",rowsSels[0]);
+                
+            	var width = 700;
+            	var height = 540;
+            	
+            	var left = (document.body.clientWidth - width)/2;
+        		var top = (document.body.clientHeight - height)/2;
+
+                $('#knowledge_win').window({left:left, top:top,width:width,height:height,title:'<b>知识库->修改</b>',index:index});
+                $('#knowledge_win').window('open');
+                $('#knowledge_win').window('refresh','modify.html');
+            }
+
+            function detailKnowledge(index){
+				
+				var mainTabs = $("#mainTabs", window.top.document);
+				
+            	var left = 0;
+            	var top = 0;
+        		var width = mainTabs.width();
+        		var height = mainTabs.height() - 40;
+
+        		var row = $('#knowledge_grid').datagrid('getData').rows[index];
+        		
+        		var title = '<b>' + row.title + '</b>';
+        		
+                $('#knowledge_win').window({left:left, top:top,width:width,height:height,title:title,index:index});
+                $('#knowledge_win').window('open');
+                $('#knowledge_win').window('refresh','detail.html');
+
+            }
+            
+            function effectKnowledge(index){
+				
+				$.ajax( {
+                    async : false,
+                    url: "http://localhost/solr/knowledge/dataimport?command=full-import&clean=true&commit=true&entity=knowledge",
+                    success: function( data, textStatus, jqXHR ){
+
+                       	showMsg("知识生效成功！");
+
+                    } ,
+                    error: function(jqXHR, textStatus, errorMsg){
+                    	if (jqXHR.responseText == 'nologin') {//未登录则先跳转到登录页面
+                    		location.href = "login/index.html";
+                    	} else {
+                    		alert(jqXHR.responseText);
+                    	}
+                    	
+                    }
+                });
+
+            }
+			
+			function fmtKnowledge(val, row, index) {
+
+            	var title = row.title_hl != undefined ? row.title_hl:row.title;
+				
+            	var str = "<label>标题：</label><a href='javascript:void(0)' onclick='detailKnowledge(" + index +")'><u>" + title + "</u></a> ";
+				str += "<br>";
+				
+				str += "<label>创建者：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + (row.creator != undefined ? row.creator:"") + "</label>";
+				str += "<label>创建时间：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + (row.modifyTime != undefined ? row.modifyTime:"") + "</label>";
+				
+				str += "<label>分类：</label><label style='width:150px;display:inline-block;overflow:hidden;font-weight:normal'>" + (row.type != undefined ? row.type:"") + "</label>";				
+				str += "<br>";				
+				str += "<label>问题描述：</label>";
+				str += "<div style='width:90%;text-overflow:ellipsis;white-space:nowrap; overflow:hidden;'>"
+				str += row.question != undefined ? row.question:"";
+				str += "</div>";
+				
+				str += "<label>解决方案：</label>";
+				str += "<div style='width:90%;text-overflow:ellipsis;white-space:nowrap; overflow:hidden;'>"
+				str += row.project != undefined ? row.project:"";				
+				str += "</div>";
+												
+                return str;
+                
+            }
+           
+        </script>
+</body>
+</html>
+

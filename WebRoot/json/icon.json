@@ -1,0 +1,15 @@
+[
+  {"name":"view","value":"fa fa-tachometer"},
+  {"name":"fa-cny","value":"fa fa-cny"},  
+  {"name":"fa-bank","value":"fa fa-bank"},
+  {"name":"statistics","value":"fa fa-area-chart"}, 
+  {"name":"fa-pie-chart","value":"fa fa-pie-chart"},
+  {"name":"admin","value":"fa fa-user"},
+  {"name":"alert","value":"fa fa-bell-o"},
+  {"name":"lock","value":"fa fa-lock"},
+  {"name":"setting","value":"fa fa-gears"},
+  {"name":"fa-gear","value":"fa fa-gear"},
+  {"name":"fa-book","value":"fa fa-book"},
+  {"name":"fa-database","value":"fa fa-database"},
+  {"name":"tool","value":"fa fa-wrench"}  
+]

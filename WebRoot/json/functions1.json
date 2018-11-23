@@ -1,0 +1,11 @@
+[
+  {"id":1,"name":"不同","function":"max()","params":"T|N","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":2,"name":"最新值","function":"last()","params":"N","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":3,"name":"改变","function":"change()","params":"","description":"最新值与其前一个值的差","modify_time":"2016/08/16 10:11"},
+  {"id":4,"name":"最小值","function":"min()","params":"","description":"最近一段时间来","modify_time":"2016/08/16 10:11"},
+  {"id":5,"name":"最大值","function":"diff()","params":"","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":6,"name":"没数据","function":"nodata()","params":"","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":7,"name":"平均值","function":"avg()","params":"","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":8,"name":"日期","function":"date()","params":"T","description":"检查对应的端口是否处在侦听状态.0——表示未侦听,1—表示已经侦听.","modify_time":"2016/08/16 10:11"},
+  {"id":8,"name":"日期","function":"abschange()","params":"T","description":"最新值与其前一个值的绝对值差","modify_time":"2016/08/16 10:11"}
+]

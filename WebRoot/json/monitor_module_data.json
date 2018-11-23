@@ -1,0 +1,14 @@
+{"total":28,"rows":[
+  {"cn_name":"MySQL监控模板","en_name":"Template App MySQL","monitor_items":"MySQL version;MySQL uptime","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"FTP服务监控模板","en_name":"Template App FTP Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"HTTP服务监控模板","en_name":"Template App HTTP Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"HTTPS服务监控模板","en_name":"Template App HTTPS Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"IMAP服务监控模板","en_name":"Template App IMAP Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"LDAP服务监控模板","en_name":"Template App LDAP Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"NNTP服务监控模板","en_name":"Template App NNTP Service","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"Linux操作系统监控模板","en_name":"Template OS Linux","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"Windows操作系统监控模板","en_name":"Template OS Windows","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"AIX操作系统监控模板","en_name":"Template OS AIX","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"Tomcat监控模板","en_name":"Template JMX Tomcat","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"},
+  {"cn_name":"Generic监控模板","en_name":"Template JMX Generic","monitor_items":"","remark":"WS-C4507R-E","modify_time":"2016/08/16 10:11"}
+]}

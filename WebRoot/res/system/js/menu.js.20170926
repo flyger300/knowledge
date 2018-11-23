@@ -1,0 +1,255 @@
+$(function() {
+
+    var menuStr = loadTree();
+    var left = document.getElementById("left");
+    left.innerHTML = menuStr;
+    //jQuery("#Content-Left").jqueryAccordionMenu();
+
+
+
+    /*$('#mainTabs').tabs({tabPosition:'right'});*/
+
+    /*$('#mainTabs').tabs('add',{
+        title: "首页",
+        href:'home.html',
+        closable:false
+    });*/
+});
+
+/**
+ * 加载菜单
+ */
+function loadTree() {
+    menuStr = "";
+    $.ajax( {
+        async : false,
+        url: "getMenus.do" ,
+//        url:"json/menu.json",
+        success: function( data, textStatus, jqXHR ){
+            
+            var json = JSON.parse(data);
+
+            var menulist = [];
+            $.each(json, function(i, item) {
+                menulist.push({
+                    id: item.id,
+                    name: item.name,
+                    parentId: item.parentId,
+                    icon: item.icon,
+                    order: item.orderNum,
+                    type:item.type,
+                    url:item.url
+                });
+            });
+
+            for(var i = 0; i < menulist.length; i++) {
+                var children = menulist[i].children || [];
+                for(var j = 0; j < menulist.length; j++) {
+                    if(menulist[j].parentId == menulist[i].id) {
+                        children.push(menulist[j]);
+                    }
+                }
+                menulist[i].children = children;
+            }
+
+            var treeData = [];
+            $.each(menulist, function(i, item) {
+
+                if(item.parentId == 0) {
+                    treeData.push(item);
+                }
+
+            });
+
+            treeData.sort(function(a,b){
+                return a.orderNum - b.orderNum
+            });
+
+            $.each(treeData, function(i, item) {
+                menuStr += "<li class=\"treeview\"><a href=\"javascript:;\"><img data-icon-n=\"" + item.icon + "\"" +
+                "data-icon-a=\"" + item.icon + "\" src=\"" + item.icon + "\">" +
+                "<span>" + item.name +"</span><i class=\"fa fa-angle-left pull-right\"></i></a>"
+                /*menuStr += "<li class=\"treeview\"><a href=\"javascript:;\">" + "<i class=\"" + item.iconCls + "\"></i>" +
+                "<span>" + item.text +"</span><i class=\"fa fa-angle-left pull-right\"></i></a>"*/
+                menuStr += loadSubMenu(item);
+                menuStr += "</li>";
+            });
+
+
+        } ,
+        error: function(jqXHR, textStatus, errorMsg){
+        	if (jqXHR.responseText == 'nologin') {
+        		location.href = "login/index.html";
+        	} else {
+        		alert(jqXHR.responseText);
+        	}
+        	
+        }
+    });
+	/*$.ajaxSetup({
+        async : false  
+    }); 
+		
+	$.post(basePath + "/login/getMenu", function(data) {
+		var menulist = [];
+		
+		$.each(data, function(i, item) {
+			*//*alert("" + item.id + "," + item.parent_id);*//*
+			menulist.push({
+				id: item.id,
+				text: item.menu_name,
+				attributes: item.menu_url, 
+				parent_id: item.parent_id,
+				iconCls: item.icon,
+				order_num:item.order_num
+			});
+		});
+		
+		for(var i = 0; i < menulist.length; i++) {
+			var children = menulist[i].children || [];
+			for(var j = 0; j < menulist.length; j++) {
+				if(menulist[j].parent_id == menulist[i].id) {
+					children.push(menulist[j]);
+				}
+			}
+			menulist[i].children = children;
+		}
+				
+		var treeData = [];
+		$.each(menulist, function(i, item) {
+			*//*alert("" + item.id + "," + item.parent_id) *//*
+			if(item.parent_id == 0) {
+				treeData.push(item);
+			}
+		});
+		
+		treeData.sort(function(a,b){
+            return a.order_num-b.order_num});
+		
+		menuStr ="<ul id='demo-list'><li class='active'><a href='javascript:' onclick='addMainTab(\"首页\",\"\")' title='首页'><i class='fa fa-home'></i></a></li>"
+		$.each(treeData, function(i, item) {
+			*//*alert("" + item.id + "," + item.parent_id + ":" + item.order_num) ;*//*
+			menuStr += "<li><a";
+			if (item.attributes != null) {
+				menuStr += " href='javascript:' title='" + item.text + "' onclick=\"addMainTab('" + item.text + "','" + item.attributes + "')\"><i class='" + item.iconCls + "'></i></a>"
+			} else {
+				menuStr += " href='javascript:' title='" + item.text + "' ><i class='" + item.iconCls + "'></i></a>"
+			}
+			if (item.children.length != 0) {
+				item.children.sort(function(a,b){
+		            return a.order_num-b.order_num});
+				menuStr += loadSubMenu(item,0);
+			} 
+			menuStr += "</li>";
+			
+			
+		});
+//		var href = ""
+		menuStr += "<li><a href='javascript:location.href=\"/zcurd/login/logout\"' title='退出'><i class='fa fa-lock'></i></a></li>"
+			
+		menuStr += "</ul>";
+		*//*alert(menuStr);*//*
+		
+	});*/
+	
+	/*alert(menuStr);*/
+	return menuStr;
+}
+
+function loadSubMenu(item) {
+
+	var buf = ""
+	if (item.children.length != 0) {
+
+		buf += "<ul class='treeview-menu'>"
+		for (var j=0; j < item.children.length;j++) {
+            //buf +="<li><a href='javascript:' onclick=\"addMainTab('" + item.children[j].text + "','" + item.children[j].attributes + "')\">" + item.children[j].text;
+			buf +="<li><a href='javascript:' onclick=\"addMainTab('" + item.children[j].name + "','" + item.children[j].url + "','" + item.children[j].type + "')\"><i></i>" + item.children[j].name + "</a></li>";
+		}
+
+		buf += "</ul>";
+	}
+	
+	return buf;
+	
+}
+
+/**
+ * 菜单事件
+ */
+function treeBeforeSelect(node) {
+    if(node.children && node.children.length > 0) {
+        if(node.state == "open") {
+            $(this).tree("collapse", node.target);
+        }else {
+            $(this).tree("expand", node.target);
+        }
+        return false;
+    } 
+}
+/**
+ * 菜单事件
+ */
+function treeSelect(node) {
+	addMainTab(node.text, node.attributes);
+}
+
+/**
+ * 增加一个主窗口
+ */
+function addMainTab(text, url,type) {
+	if (type == 1) {
+		//openFullWindow(url);
+		
+		window.open(url,'big','fullscreen=yes')
+		
+	} else {
+		if(!$('#mainTabs').tabs("exists", text)) {
+	        $('#mainTabs').tabs('add',{
+	            title: text,
+	            href:url,
+	            closable:true,
+				style:"background-color: #f1f1f1;"
+	        });
+	    }else {
+	        $('#mainTabs').tabs("select", text);
+	    }
+	
+    }
+
+}
+
+/**
+ * 全屏
+ */
+function fullScreen() {
+	if($("#fullScreen").find(".glyphicon-screenshot").length > 0) {
+		$("#layout").layout('expand', 'west').layout('expand', 'north');
+		$("#fullScreen").find(".l-btn-icon").addClass("glyphicon-fullscreen").removeClass("glyphicon-screenshot");
+	}else {
+		$("#layout").layout('collapse', 'north').layout('collapse', 'west');
+		$("#fullScreen").find(".l-btn-icon").addClass("glyphicon-screenshot").removeClass("glyphicon-fullscreen");
+		$(".layout-expand").hide();
+	}
+	
+}
+
+function openFullWindow(url)
+{
+	 
+   var strFeatures = "scrollbars=0,left=0,screenX=0,top=0,screenY=0";  
+   if (window.screen) {
+       //获取屏幕的分辨率
+        var maxh = screen.availHeight-30;
+        var maxw = screen.availWidth-10;
+        strFeatures += ",height="+maxh;
+        strFeatures += ",innerHeight="+maxh;
+         strFeatures += ",width="+maxw;
+        strFeatures += ",innerwidth="+maxw;
+        
+   } else {
+       strFeatures +=",resizable";        
+   }
+   
+   window.open(url,strFeatures);
+}

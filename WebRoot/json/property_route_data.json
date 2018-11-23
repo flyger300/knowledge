@@ -1,0 +1,14 @@
+{"total":9,"rows":[
+  {"name":"设备名称","value":"","editor":"text"},
+  {"name":"设备系列号","value":"","editor":"text"},
+  {"name":"管理地址","value":"","editor":"text"},
+  {"name":"厂商","value":"","editor":"text"},
+  {"name":"系列","value":"","editor":"text"},
+  {"name":"型号","value":"","editor":"text"},
+  {"name":"软件版本","value":"","editor":"text"},
+  {"name":"状态","value":"","editor":"text"},
+  {"name":"位置","value":"","editor":"text"},
+  {"name":"备注","value":"","editor":"numberbox"},
+  {"name":"是否监控","value":"","editor":"numberbox"},
+  {"name":"修改时间","value":""}
+]}

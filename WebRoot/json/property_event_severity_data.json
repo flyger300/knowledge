@@ -1,0 +1,9 @@
+{"total":9,"rows":[
+{"name":"等级名称","value":"","editor":"text"},
+{"name":"等级级别","value":"","editor":"text"},
+  {"name":"等级颜色","value":"","editor":{
+    "type": "color"
+  }},
+{"name":"备注","value":"","editor":"numberbox"},
+{"name":"修改时间","value":""}
+]}

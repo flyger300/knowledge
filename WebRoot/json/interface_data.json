@@ -1,0 +1,20 @@
+{"total":28,"rows":[
+  {"name":"EOBC0/0","device_name":"SDOA-6509-3F-1","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/1","device_name":"SDOA-6509-3F-1","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/2","device_name":"SDOA-6509-3F-1","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/3","device_name":"SDOA-6509-3F-1","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/1","device_name":"SDOA-6509-3F-2","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/2","device_name":"SDOA-6509-3F-2","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/3","device_name":"SDOA-6509-3F-2","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/4","device_name":"SDOA-6509-3F-2","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/5","device_name":"SDOA-6509-3F-2","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/1","device_name":"SDOA-6509-3F-3","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/2","device_name":"SDOA-6509-3F-3","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/3","device_name":"SDOA-6509-3F-3","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/1","device_name":"SDOA-6509-3F-4","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/2","device_name":"SDOA-6509-3F-4","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/3","device_name":"SDOA-6509-3F-4","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/1","device_name":"SDOA-6509-3F-5","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/2","device_name":"SDOA-6509-3F-5","isMonitor":"0","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"},
+  {"name":"EOBC0/3","device_name":"SDOA-6509-3F-5","isMonitor":"1","protocol_status":"up","abbreviation":"EO0/0","bandwidth":"100","description":"[SDOA-7304-3F-1: Gi0]","interface_ip":"127.0.0.61"}
+]}

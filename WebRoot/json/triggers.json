@@ -1,0 +1,6 @@
+{"total":28,"rows":[
+  {"id":1,"severity":"3","expression":"50>{zabbix_client:vfs.file.cksum[/etc/passwd].diff(0)}>0","description":"","status":"0","modify_time":"2016/08/16 10:11"},
+  {"id":2,"severity":"4","expression":"80>{zabbix_client:vfs.file.cksum[/etc/passwd].diff(0)}>50","description":"","status":"0","modify_time":"2016/08/16 10:11"},
+  {"id":3,"severity":"5","expression":"90>{zabbix_client:vfs.file.cksum[/etc/passwd].diff(0)}>80","description":"","status":"0","modify_time":"2016/08/16 10:11"},
+  {"id":4,"severity":"6","expression":"{zabbix_client:vfs.file.cksum[/etc/passwd].diff(0)}>90","description":"","status":"0","modify_time":"2016/08/16 10:11"}
+]}
